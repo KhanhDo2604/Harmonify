@@ -68,7 +68,10 @@ class CardMusic extends StatelessWidget {
                       maxWidth: MediaQuery.of(context).size.width - 140),
                   child: Text(
                     podcast.name,
-                    style: Theme.of(context).textTheme.labelSmall,
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 14),
                     overflow: TextOverflow.clip,
                     softWrap: true,
                   ),

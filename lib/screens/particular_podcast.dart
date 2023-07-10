@@ -32,7 +32,7 @@ class _ParticularPodcastState extends State<ParticularPodcast> {
             IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
             IconButton(onPressed: () {}, icon: const Icon(Icons.more_vert)),
           ]),
-      body: ListView(children: [
+      body: ListView(physics: const BouncingScrollPhysics(), children: [
         Center(
           child: Stack(
             children: [
@@ -86,9 +86,7 @@ class _ParticularPodcastState extends State<ParticularPodcast> {
           child: Marquee(
             text: widget.podcast.name,
             style: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-                color: Colors.white),
+                fontSize: 18, fontWeight: FontWeight.w600, color: Colors.white),
             scrollAxis: Axis.horizontal,
             crossAxisAlignment: CrossAxisAlignment.start,
             blankSpace: 40.0,

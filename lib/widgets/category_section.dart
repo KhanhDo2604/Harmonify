@@ -61,6 +61,7 @@ class CategorySection extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.only(left: 16),
             child: ListView.separated(
+              physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
               itemCount: category.length,
               separatorBuilder: (context, index) => const SizedBox(

@@ -20,11 +20,12 @@ class _HomePageState extends State<HomePage> {
         FocusManager.instance.primaryFocus?.unfocus();
       },
       child: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
-              padding: EdgeInsets.only(top: 24, right: 16, left: 16),
+              padding: EdgeInsets.only(top: 20, right: 16, left: 16),
               child: Text(
                 "Looking for podcast channels",
                 style: TextStyle(color: Colors.white),
