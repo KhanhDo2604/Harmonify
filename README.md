@@ -1,6 +1,6 @@
-# ui
+# Harmonify
 
-A new Flutter project.
+Harmonify is your ultimate music application, offering a seamless blend of personalized playlists, curated recommendations, and a sleek, intuitive interface. Dive into a world of sonic exploration, where music discovery meets effortless playback. Elevate your listening experience with Harmonize, our innovative feature that adapts playlists to match your mood..
 
 ## Getting Started
 
