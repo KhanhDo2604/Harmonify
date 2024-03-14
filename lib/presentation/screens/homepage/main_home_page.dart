@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ui/model/artist.dart';
+import 'package:ui/presentation/screens/homepage/top_daily.dart';
 import 'package:ui/presentation/widgets/followed_aritst_card.dart';
+import 'package:ui/presentation/screens/homepage/recently_played.dart';
 
 class MainHomePage extends StatelessWidget {
   const MainHomePage({super.key});
@@ -108,26 +110,9 @@ class MainHomePage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          const Column(
-            children: [
-              Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Recently Played",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w600,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
+          const RecentlyPlayed(),
+          const SizedBox(height: 16),
+          const TopDaily(),
         ],
       ),
     );

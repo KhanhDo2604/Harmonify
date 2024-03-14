@@ -11,7 +11,7 @@ class Artist {
     required this.genre,
   });
 
-  Map<String, dynamic> toMap() {
+  Map<String, dynamic> toJson() {
     return {
       'id': id,
       'name': name,
@@ -20,7 +20,7 @@ class Artist {
     };
   }
 
-  factory Artist.fromMap(Map<String, dynamic> map) {
+  factory Artist.fromJson(Map<String, dynamic> map) {
     return Artist(
       id: map['id'],
       name: map['name'],
